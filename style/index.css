@@ -13,9 +13,11 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    height: 60px;
+    height: 75px;
     margin: 0 -200px;
     box-shadow: 0px 2px 5px rgba(62, 62, 62, 0.1);
+    margin: 0 -340px;
+    /* Sağdan ve soldan 100px genişleme */
 }
 
 .navbar-left .logo {
@@ -32,7 +34,7 @@ body {
     text-decoration: none;
     margin-left: 25px;
     margin-right: 20px;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .navbar-right a:hover {
@@ -49,11 +51,13 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f7f7f7;
-    height: 90px;
+    height: 105px;
     margin: 0 -200px;
     position: relative;
     z-index: 10;
     transition: box-shadow 0.3s;
+    margin: 0 -340px;
+    /* Sağdan ve soldan 100px genişleme */
 }
 
 .navbar2-center {
@@ -66,8 +70,8 @@ body {
     display: none;
     background-color: #f7f7f7;
     height: 287px;
-    width: 1517px;
-    margin: 0 -197px;
+    width: 1795px;
+    margin: 0 -338px;
     position: relative;
     top: -2px;
     z-index: 9;
@@ -77,15 +81,16 @@ body {
 .alt-metin-icerik {
     display: none;
     padding: 10px;
-    padding-left: 25px; 
-    padding-top: 40px;
+    padding-left: 25px;
+    padding-top: 20px;
+    font-size: 20px;
 }
 
 .navbar2-center a {
     color: rgb(0, 0, 104);
     text-decoration: none;
     margin: 0 30px;
-    font-size: 13px;
+    font-size: 16px;
     position: relative;
 }
 
@@ -105,7 +110,7 @@ body {
 }
 
 .alt-metin-icerik a {
-   
+
     margin-bottom: 10px;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.66);
@@ -115,7 +120,80 @@ body {
     color: rgb(0, 0, 126);
 }
 
-h4{
+h4 {
     color: #003d7d;
     margin-bottom: 20px;
+}
+
+
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.image {
+    width: 90%;
+    height: auto;
+}
+
+.centered-text {
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button {
+    position: absolute;
+    top: 48%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+    padding: 10px 35px;
+    background-color: rgb(0, 0, 100);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+
+}
+
+.button:hover {
+    background-color: rgb(0, 0, 208);
+}
+
+
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+
+.centered-div {
+    width: calc(100% - 200px);
+    /* Kenarlardan 100px uzaklık */
+    background-color: white;
+    /* İç kısmı beyaz */
+    border: 1px solid rgba(41, 41, 41, 0.188);
+    /* Kenarları siyah çizgi */
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    /* Metni ortala */
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85%;
+    transition: transform 0.3s ease-in-out; 
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card1:hover {
+    transform: scale(1.0095);
 }

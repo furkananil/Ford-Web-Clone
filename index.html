@@ -13,128 +13,193 @@
 </head>
 
 <body>
-    <div>
 
-        <div class="container">
-            <nav class="navbar">
-                <div class="navbar-left">
-                    <a href="index.html"><img src="images/ford-logo.png" alt="Logo" class="logo" width="110px" height="70px"></a>
-                </div>
-                <div class="navbar-right" style="margin-right: 20px;">
-                    <a href="#section1">Fiyat Listeleri</a>
-                    <a href="#section2">Servis Randevu</a>
-                    <a href="#section3">Ford Bayileri</a>
-                    <a href="#section4">Ford Hesabım</a>
-                    <img src="images/loupe.png" alt="Ara" class="search-icon" width="15px" height="10px">
-                </div>
-            </nav>
-        
-            <nav class="navbar2">
-                <div class="navbar2-center">
-                    <a href="#" onclick="toggleContent('modeller-icerik', this)">MODELLER</a>
-                    <span>|</span>
-                    <a href="#" onclick="toggleContent('elektrikli-icerik', this)">ELEKTRİKLİ ARAÇLAR</a>
-                    <span>|</span>
-                    <a href="#" onclick="toggleContent('kampanya-icerik', this)">KAMPANYA VE FİNANSAL HİZMETLER</a>
-                    <span>|</span>
-                    <a href="#" onclick="toggleContent('ford-sahipleri-icerik', this)">FORD SAHİPLERİ</a>
-                    <span>|</span>
-                    <a href="#" onclick="toggleContent('destek-icerik', this)">DESTEK</a>
-                </div>
-            </nav>
-        
-            <div id="content-container" class="content-container">
-                <div id="modeller-icerik" class="alt-metin-icerik">
-                    <h4 style="display: inline;"><b>KEŞFET</b></h4>
-                    <h4 style="display: inline; padding-left: 260px;"><b>FORD'UNU SEÇ</b></h4><br><br>
-                    <a href="">Otomobiller & SUV</a>
-                    <a href="" style="padding-left: 220px;">Stok Görüntüle</a><br>
-                    <a href="">Premium Araçlar</a>
-                    <a href="" style="padding-left: 235px;">Dijital Stüdyo</a><br>
-                    <a href="">Ticari Araçlar</a>
-                    <a href="" style="padding-left: 260px;">Test Sürüşü</a><br>
-                    <a href="">Elektrikli Araçlar</a>
-                    <a href="" style="padding-left: 240px;">Bilgi Alın</a><br>
-                    <a href="">Fiyat Listesi</a>
-                    <a href="" style="padding-left: 270px;">Ford 2. El</a><br>
-                </div>
 
-                <div id="elektrikli-icerik" class="alt-metin-icerik" >
-                    <h4><b>ELEKTRİKLİ ARAÇLAR</b></h4>
-                    <a href="">Elektrikli Araç Teknolojisi</a><br>
-                    <a href="">Menzil</a><br>
-                    <a href="">Şarj</a><br>
-                    <a href="">Batarya</a><br>
-                    <a href="">Elektrikli Araçlara Genel Bakış</a>
-                </div>
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="index.html"><img src="images/ford-logo.png" alt="Logo" class="logo" width="150px"
+                        height="130px" style="padding-left: 20px;"></a>
+            </div>
+            <div class="navbar-right" style="margin-right: 20px;">
+                <a href="#section1">Fiyat Listeleri</a>
+                <a href="#section2">Servis Randevu</a>
+                <a href="#section3">Ford Bayileri</a>
+                <a href="#section4">Ford Hesabım</a>
+                <img src="images/loupe.png" alt="Ara" class="search-icon" width="15px" height="10px">
+            </div>
+        </nav>
 
-                <div id="kampanya-icerik" class="alt-metin-icerik">
-                    <h4 style="display: inline;"><b>FİNANSAL HİZMETLER</b></h4>
-                        <h4 style="display: inline; padding-left: 90px;"><b>KAMPANYALAR</b></h4><br><br>
-                        <a href="">Hızlı Kredi Başvurusu</a>
-                        <a href="" style="padding-left: 200px;">Kampanyalar</a><br>
-                        <a href="">Her şey Dahil Finans Paketi</a><br>
-                        <a href="">Ford Eşit Ödemeli Kredi</a><br>
-                        <a href="">Ford Lease</a><br>
-                        <a href="">Ford Options</a>
-                 
-                </div>
+        <nav class="navbar2">
+            <div class="navbar2-center">
+                <a href="#" onclick="toggleContent('modeller-icerik', this)">MODELLER</a>
+                <span>|</span>
+                <a href="#" onclick="toggleContent('elektrikli-icerik', this)">ELEKTRİKLİ ARAÇLAR</a>
+                <span>|</span>
+                <a href="#" onclick="toggleContent('kampanya-icerik', this)">KAMPANYA VE FİNANSAL HİZMETLER</a>
+                <span>|</span>
+                <a href="#" onclick="toggleContent('ford-sahipleri-icerik', this)">FORD SAHİPLERİ</a>
+                <span>|</span>
+                <a href="#" onclick="toggleContent('destek-icerik', this)">DESTEK</a>
+            </div>
+        </nav>
 
-                <div id="ford-sahipleri-icerik" class="alt-metin-icerik">
-                    <h4 style="display: inline;"><b>HESABIM</b></h4>
-                        <h4 style="display: inline; padding-left: 250px;"><b>ARACIM</b></h4>
-                        <h4 style="display: inline; padding-left: 260px;"><b>SATIŞ SONRASI HİZMETLER</b></h4><br><br>
-                        <a href="">Ford Hesabım</a>
-                        <a href="" style="padding-left: 260px;">Ford Pro</a>
-                        <a href="" style="padding-left: 295px;">Ford Servis</a><br>
-                        <a href="">FordPassᵀᴹ</a>
-                        <a href="" style="padding-left: 275px;">Periyodik Bakım İçerik ve Fiyatları</a>
-                        <a href="" style="padding-left: 120px;">Garanti</a><br>
-                       
-                        <a href="" style="padding-left: 360px;">Servis Randevusu</a>
-                        <a href="" style="padding-left: 235px;">Ford 365 Garanti</a><br>
-                        <a href="" style="padding-left: 360px;">Gönüllü Geri Çağırma Kampanyaları</a>
-                        <a href="" style="padding-left: 105px;">Kaporta Skalalı Destek</a><br>
-                        <a href="" style="padding-left: 360px;">Tanıtma ve Kullanım Kılavuzları</a>
-                        <a href="" style="padding-left: 140px;">Araç Bakım, Onarım ve Tamiri</a><br>
-                        <a href="" style="padding-left: 360px;">Ford Orijinal Yedek Parçaları</a>
-                        <a href="" style="padding-left: 160px;">Lpg Kiti</a><br>
-                        <a href="" style="padding-left: 360px;">Aksesuarlar</a>
-                </div>
-                
-                <div id="destek-icerik" class="alt-metin-icerik">
-                    <h4 style="display: inline;"><b>İLETİŞİM</b></h4>
-                        <h4 style="display: inline; padding-left: 250px;"><b>ARACIM</b></h4>
-                        <h4 style="display: inline; padding-left: 260px;"><b>SSS</b></h4><br><br>
-                        <a href="">Bize Ulaşın</a>
-                        <a href="" style="padding-left: 270px;">Aktif Yol Yardım</a>
-                        <a href="" style="padding-left: 245px;">Sıkça Sorulan Sorular</a><br>
-                        <a href="">Ford Bayileri</a>
-                        <a href="" style="padding-left: 260px;">Tanıtım ve Kullanım Kılavuzları</a>
-                        <br>
-                        <a href="" style="padding-left: 355px;">Servis Randevusu</a>
-             
-                </div>
+        <div id="content-container" class="content-container">
+            <div id="modeller-icerik" class="alt-metin-icerik">
+                <h4 style="display: inline;"><b>KEŞFET</b></h4>
+                <h4 style="display: inline; padding-left: 260px;"><b>FORD'UNU SEÇ</b></h4><br><br>
+                <a href="">Otomobiller & SUV</a>
+                <a href="" style="padding-left: 190px;">Stok Görüntüle</a><br>
+                <a href="">Premium Araçlar</a>
+                <a href="" style="padding-left: 210px;">Dijital Stüdyo</a><br>
+                <a href="">Ticari Araçlar</a>
+                <a href="" style="padding-left: 240px;">Test Sürüşü</a><br>
+                <a href="">Elektrikli Araçlar</a>
+                <a href="" style="padding-left: 215px;">Bilgi Alın</a><br>
+                <a href="">Fiyat Listesi</a>
+                <a href="" style="padding-left: 250px;">Ford 2. El</a><br>
+            </div>
+
+            <div id="elektrikli-icerik" class="alt-metin-icerik">
+                <h4><b>ELEKTRİKLİ ARAÇLAR</b></h4>
+                <a href="">Elektrikli Araç Teknolojisi</a><br>
+                <a href="">Menzil</a><br>
+                <a href="">Şarj</a><br>
+                <a href="">Batarya</a><br>
+                <a href="">Elektrikli Araçlara Genel Bakış</a>
+            </div>
+
+            <div id="kampanya-icerik" class="alt-metin-icerik">
+                <h4 style="display: inline;"><b>FİNANSAL HİZMETLER</b></h4>
+                <h4 style="display: inline; padding-left: 90px;"><b>KAMPANYALAR</b></h4><br><br>
+                <a href="">Hızlı Kredi Başvurusu</a>
+                <a href="" style="padding-left: 160px;">Kampanyalar</a><br>
+                <a href="">Her şey Dahil Finans Paketi</a><br>
+                <a href="">Ford Eşit Ödemeli Kredi</a><br>
+                <a href="">Ford Lease</a><br>
+                <a href="">Ford Options</a>
+
+            </div>
+
+            <div id="ford-sahipleri-icerik" class="alt-metin-icerik">
+                <h4 style="display: inline;"><b>HESABIM</b></h4>
+                <h4 style="display: inline; padding-left: 250px;"><b>ARACIM</b></h4>
+                <h4 style="display: inline; padding-left: 260px;"><b>SATIŞ SONRASI HİZMETLER</b></h4><br>
+                <a href="">Ford Hesabım</a>
+                <a href="" style="padding-left: 230px;">Ford Pro</a>
+                <a href="" style="padding-left: 285px;">Ford Servis</a><br>
+                <a href="">FordPassᵀᴹ</a>
+                <a href="" style="padding-left: 250px;">Periyodik Bakım İçerik ve Fiyatları</a>
+                <a href="" style="padding-left: 63px;">Garanti</a><br>
+
+                <a href="" style="padding-left: 360px;">Servis Randevusu</a>
+                <a href="" style="padding-left: 203px;">Ford 365 Garanti</a><br>
+                <a href="" style="padding-left: 360px;">Gönüllü Geri Çağırma Kampanyaları</a>
+                <a href="" style="padding-left: 43px;">Kaporta Skalalı Destek</a><br>
+                <a href="" style="padding-left: 360px;">Tanıtma ve Kullanım Kılavuzları</a>
+                <a href="" style="padding-left: 85px;">Araç Bakım, Onarım ve Tamiri</a><br>
+                <a href="" style="padding-left: 360px;">Ford Orijinal Yedek Parçaları</a>
+                <a href="" style="padding-left: 110px;">Lpg Kiti</a><br>
+                <a href="" style="padding-left: 360px;">Aksesuarlar</a>
+            </div>
+
+            <div id="destek-icerik" class="alt-metin-icerik">
+                <h4 style="display: inline;"><b>İLETİŞİM</b></h4>
+                <h4 style="display: inline; padding-left: 250px;"><b>ARACIM</b></h4>
+                <h4 style="display: inline; padding-left: 260px;"><b>SSS</b></h4><br><br>
+                <a href="">Bize Ulaşın</a>
+                <a href="" style="padding-left: 250px;">Aktif Yol Yardım</a>
+                <a href="" style="padding-left: 220px;">Sıkça Sorulan Sorular</a><br>
+                <a href="">Ford Bayileri</a>
+                <a href="" style="padding-left: 235px;">Tanıtım ve Kullanım Kılavuzları</a>
+                <br>
+                <a href="" style="padding-left: 355px;">Servis Randevusu</a>
+
             </div>
         </div>
-        
-        
-        
-        
-        
-
-
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+    <div class="container1">
+        <img src="images/1.png" alt="Your Image" class="image" style="margin-bottom: 3px;">
+        <div class="centered-text">YENİ KUGA</div>
+        <button class="button">Keşfet</button>
+    </div>
+
+    <div class="container1">
+        <img src="images/2.png" alt="Your Image" class="image" style="margin-bottom: 3px;">
+        <div class="centered-text" style="padding-left: 530px;">HAYALİNİZDEKİ FORD'A SAHİP OLUN!</div>
+        <button class="button">Stok Görüntüle</button>
+    </div>
+
+    <div class="container1">
+        <img src="images/3.png" alt="Your Image" class="image" style="margin-bottom: 3px;">
+        <div class="centered-text" style="padding-left: 320px;">EFSANE GERİ DÖNÜYOR</div>
+        <button class="button">Keşfet</button>
+    </div>
+
+    <div class="container1">
+        <img src="images/4.png" alt="Your Image" class="image">
+        <div class="centered-text" style="padding-left: 430px;">BU AYA ÖZEL KAMPANYALAR</div>
+        <button class="button">Keşfet</button>
+    </div>
+
+
+    <div class="container2">
+        <div class="centered-div">
+            <br>
+            <h1 style="font-size: 45px; color: rgb(0, 0, 60);">Hayalinizdeki Ford'a</h1>
+            <h1 style="font-size: 45px; color: rgb(0, 0, 67);">Sahip Olmanın Tam Zamanı</h1>
+            <button type="button" class="btn"
+                style="background-color: rgb(0, 0, 136); color: aliceblue; border-radius: 30px; padding: 10px 35px; margin-bottom: 175px;"><b>Oluştur
+                    ve Fiyat Al</b></button>
+
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card1">
+                        <img src="images/c1.png" class="card-img-top" alt="...">
+                        <div class="card-body"><br>
+                            <h5 class="card-title" style="color: rgb(0, 0, 60); font-size: 25px;"><b>Ford 365 Garanti
+                                    İle 365 Gün Garantinin Keyfini Sürün!</b></h5><br>
+                            <p class="card-text" style="font-size: 17px;">Ayrıcalıklı sürüş deneyimi ve fonksiyonel teknolojilerle keyifli
+                                yolculukları garanti eden Ford'unuzun şimdi yepyeni bir garantisi var.</p>
+                            <button type="button" class="btn"
+                                style="background-color: rgb(0, 0, 136); color: aliceblue; border-radius: 30px; padding: 10px 35px; margin-bottom: 175px;"><b>Keşfet</b></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card1">
+                        <img src="images/c2.png" class="card-img-top" alt="...">
+                        <div class="card-body"><br>
+                            <h5 class="card-title" style="color: rgb(0, 0, 60); font-size: 25px;"><b>Yeni Model Değil,
+                                    Rol Model: Ford Tourneo Courier</b></h5><br>
+                            <p class="card-text" style="font-size: 17px;">Tarzıyla, tasarımıyla, teknolojisiyle, her yönüyle sıra dışı Ford
+                                Tourneo Courier. Yeni model değil, rol model.</p>
+                            <button type="button" class="btn"
+                                style="background-color: rgb(0, 0, 136); color: aliceblue; border-radius: 30px; padding: 10px 35px; margin-bottom: 175px;"><b>Filmi İzlemek için Tıkla</b></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <h1 style="font-family: Arial, Helvetica, sans-serif; color: rgba(0, 0, 84, 0.775); font-size: 60px; margin-top: 40px; margin-bottom: 20px;">Her Yaşam Tarzı için Ford</h1>
+          <p style="font-size: 20px;">Ford; çeşitli araç modelleri, <b>yüksek performans, güvenlik ve konfor özellikleri, modern teknolojiler ve çevre dostu</b> seçenekleriyle her yaşam tarzına uygun araçlar sunarak fark yaratır.</p>
+        </div>
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
