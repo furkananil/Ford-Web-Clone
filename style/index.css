@@ -17,7 +17,6 @@ body {
     margin: 0 -200px;
     box-shadow: 0px 2px 5px rgba(62, 62, 62, 0.1);
     margin: 0 -340px;
-    /* Sağdan ve soldan 100px genişleme */
 }
 
 .navbar-left .logo {
@@ -57,33 +56,11 @@ body {
     z-index: 10;
     transition: box-shadow 0.3s;
     margin: 0 -340px;
-    /* Sağdan ve soldan 100px genişleme */
 }
 
 .navbar2-center {
     display: flex;
     align-items: center;
-}
-
-
-.content-container {
-    display: none;
-    background-color: #f7f7f7;
-    height: 287px;
-    width: 1795px;
-    margin: 0 -338px;
-    position: relative;
-    top: -2px;
-    z-index: 9;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.alt-metin-icerik {
-    display: none;
-    padding: 10px;
-    padding-left: 25px;
-    padding-top: 20px;
-    font-size: 20px;
 }
 
 .navbar2-center a {
@@ -108,6 +85,28 @@ body {
 .navbar2-center a.active::after {
     background-color: #0052aa;
 }
+
+.content-container {
+    display: none;
+    background-color: #f7f7f7;
+    height: 287px;
+    width: 1795px;
+    margin: 0 -338px;
+    position: relative;
+    top: -2px;
+    z-index: 9; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.alt-metin-icerik {
+    display: none;
+    padding: 10px;
+    padding-left: 25px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+
 
 .alt-metin-icerik a {
 
@@ -173,15 +172,11 @@ h4 {
 
 .centered-div {
     width: calc(100% - 200px);
-    /* Kenarlardan 100px uzaklık */
     background-color: white;
-    /* İç kısmı beyaz */
     border: 1px solid rgba(41, 41, 41, 0.188);
-    /* Kenarları siyah çizgi */
     padding: 30px;
     box-sizing: border-box;
     text-align: center;
-    /* Metni ortala */
 }
 
 .card1 {
@@ -196,4 +191,95 @@ h4 {
 
 .card1:hover {
     transform: scale(1.0095);
+}
+
+
+.navbar3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 20px;
+    position: relative;
+    z-index: 10;
+    transition: box-shadow 0.3s;
+    margin: 0 -120px;
+}
+
+.navbar3-center {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.navbar3-center a:hover {
+    color: #003d7d;
+}
+
+.navbar3-center a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(64, 64, 64);
+    padding: 5px;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s;
+    font-size: 18px;
+}
+
+.navbar3-center a.active {
+    border-bottom: 3px solid blue;
+}
+
+#image-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.araba img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.araba img:hover {
+    transform: scale(0.95);
+}
+
+.accordion-button {
+    background-color: #ffffff !important; 
+    color: #000000;
+    cursor: pointer;
+    padding: 22px;
+    width: 100%;
+    border: none;
+    padding-left: 805px;
+    text-align: left;
+    outline: none;
+    font-size: 19px;
+}
+
+.accordion-button:focus, .accordion-button:active {
+    background-color: #ffffff !important; 
+    border: none; 
+    outline: none;
+    box-shadow: none; 
+}
+
+.accordion-button.active, .accordion-button:hover {
+    background-color: #ffffff !important; 
+    color: #000000; 
+}
+
+.accordion-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #ffffff; 
+    font-size: 19px;
+    border: none;
+}
+
+.accordion-content ul {
+    margin-left: 16px;
 }

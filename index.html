@@ -16,6 +16,8 @@
 
 
     <div class="container">
+
+        <!--NAVBAR-->
         <nav class="navbar">
             <div class="navbar-left">
                 <a href="index.html"><img src="images/ford-logo.png" alt="Logo" class="logo" width="150px"
@@ -30,6 +32,7 @@
             </div>
         </nav>
 
+        <!--NAVBAR2-->
         <nav class="navbar2">
             <div class="navbar2-center">
                 <a href="#" onclick="toggleContent('modeller-icerik', this)">MODELLER</a>
@@ -119,6 +122,7 @@
         </div>
     </div>
 
+    <!--CARDS-->
     <div class="container1">
         <img src="images/1.png" alt="Your Image" class="image" style="margin-bottom: 3px;">
         <div class="centered-text">YENİ KUGA</div>
@@ -145,6 +149,8 @@
 
 
     <div class="container2">
+
+        <!--CATCHWORD-->
         <div class="centered-div">
             <br>
             <h1 style="font-size: 45px; color: rgb(0, 0, 60);">Hayalinizdeki Ford'a</h1>
@@ -153,7 +159,7 @@
                 style="background-color: rgb(0, 0, 136); color: aliceblue; border-radius: 30px; padding: 10px 35px; margin-bottom: 175px;"><b>Oluştur
                     ve Fiyat Al</b></button>
 
-
+            <!--CARDS-->
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
                     <div class="card1">
@@ -161,7 +167,8 @@
                         <div class="card-body"><br>
                             <h5 class="card-title" style="color: rgb(0, 0, 60); font-size: 25px;"><b>Ford 365 Garanti
                                     İle 365 Gün Garantinin Keyfini Sürün!</b></h5><br>
-                            <p class="card-text" style="font-size: 17px;">Ayrıcalıklı sürüş deneyimi ve fonksiyonel teknolojilerle keyifli
+                            <p class="card-text" style="font-size: 17px;">Ayrıcalıklı sürüş deneyimi ve fonksiyonel
+                                teknolojilerle keyifli
                                 yolculukları garanti eden Ford'unuzun şimdi yepyeni bir garantisi var.</p>
                             <button type="button" class="btn"
                                 style="background-color: rgb(0, 0, 136); color: aliceblue; border-radius: 30px; padding: 10px 35px; margin-bottom: 175px;"><b>Keşfet</b></button>
@@ -174,17 +181,57 @@
                         <div class="card-body"><br>
                             <h5 class="card-title" style="color: rgb(0, 0, 60); font-size: 25px;"><b>Yeni Model Değil,
                                     Rol Model: Ford Tourneo Courier</b></h5><br>
-                            <p class="card-text" style="font-size: 17px;">Tarzıyla, tasarımıyla, teknolojisiyle, her yönüyle sıra dışı Ford
+                            <p class="card-text" style="font-size: 17px;">Tarzıyla, tasarımıyla, teknolojisiyle, her
+                                yönüyle sıra dışı Ford
                                 Tourneo Courier. Yeni model değil, rol model.</p>
                             <button type="button" class="btn"
-                                style="background-color: rgb(0, 0, 136); color: aliceblue; border-radius: 30px; padding: 10px 35px; margin-bottom: 175px;"><b>Filmi İzlemek için Tıkla</b></button>
+                                style="background-color: rgb(0, 0, 136); color: aliceblue; border-radius: 30px; padding: 10px 35px; margin-bottom: 175px;"><b>Filmi
+                                    İzlemek için Tıkla</b></button>
                         </div>
                     </div>
                 </div>
 
+            <!--CATCHWORD-->
             </div>
-            <h1 style="font-family: Arial, Helvetica, sans-serif; color: rgba(0, 0, 84, 0.775); font-size: 60px; margin-top: 40px; margin-bottom: 20px;">Her Yaşam Tarzı için Ford</h1>
-          <p style="font-size: 20px;">Ford; çeşitli araç modelleri, <b>yüksek performans, güvenlik ve konfor özellikleri, modern teknolojiler ve çevre dostu</b> seçenekleriyle her yaşam tarzına uygun araçlar sunarak fark yaratır.</p>
+            <h1
+                style="font-family: Arial, Helvetica, sans-serif; color: rgba(0, 0, 84, 0.775); font-size: 60px; margin-top: 40px; margin-bottom: 20px;">
+                Her Yaşam Tarzı için Ford</h1>
+            <p style="font-size: 20px;">Ford; çeşitli araç modelleri, <b>yüksek performans, güvenlik ve konfor
+                    özellikleri, modern teknolojiler ve çevre dostu</b> seçenekleriyle her yaşam tarzına uygun araçlar
+                sunarak fark yaratır.</p><br>
+
+            <!--CARS-->
+            <nav class="navbar3">
+                <div class="navbar3-center">
+                    <a href="#" id="otomobil-suv" class="active"><b>Otomobil & SUV</b></a>
+                    <a href="#" id="ticari-araclar"><b>Ticari Araçlar</b></a>
+                    <a href="#" id="gelecek-araclar"><b>Gelecek Araçlar</b></a>
+                </div>
+            </nav>
+            <hr>
+            <div>
+                <div class="row" id="image-container">
+                </div>
+            </div>
+            <hr>
+
+            <!--ACCORDION-->
+            <div class="accordion" style="background-color: rgb(249, 249, 249);">
+                <button class="accordion-button" style="margin-bottom: 80px;">ÖNEMLİ BİLGİ
+                    <hr>
+                </button>
+                <div class="accordion-content" style="background-color: rgb(249, 249, 249);">
+                    <ul>
+                        <li style="margin-bottom: 15px; margin-right: 730px;">Web sitesinde kullanılan görseller ile
+                            ülkede satılan araçlar ve araçların donanım özellikleri farklılıklar gösterebilir.</li>
+                        <li style="margin-bottom: 15px; margin-right: 930px;">Satılan araçlardaki mevcut donanım
+                            hakkında en güncel bilgi <a href="" style="color: darkblue;"> Ford bayilerinden</a>
+                            alınabilir.</li>
+                        <li style="margin-bottom: 15px; margin-right: 1070px;">Web sitesi kullanım şartları ile ilgili
+                            detaylı bilgiye <a href="" style="color: darkblue;"> buradan</a> erişebilirsiniz.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
 
