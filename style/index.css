@@ -283,3 +283,30 @@ h4 {
 .accordion-content ul {
     margin-left: 16px;
 }
+
+.bnavbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(250, 250, 250);
+    padding: 15px;
+}
+
+.bnavbar-section {
+    width: 100%;
+}
+
+.bnavbar-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bnavbar-section li {
+    margin: 5px 0;
+    margin-bottom: 10px;
+}
+
+.bnavbar-section a {
+    text-decoration: none; 
+    color: rgb(0, 0, 116);
+    font-size: 16px; 
+}
